@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Wahl</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-[#BAA38C] text-white p-6 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Anna Wahl</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="relative group">About<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
+        <a href="#projects" class="relative group">Projects<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
+        <a href="#certifications" class="relative group">Certifications<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
+        <a href="#experience" class="relative group">Experience<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
+        <a href="#contact" class="relative group">Contact<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero & About Side-by-Side -->
+  <section class="max-w-4xl mx-auto grid md:grid-cols-2 items-center gap-8 py-16 px-4" data-aos="fade-up">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">My name is Anna...</h2>
+      <p class="text-lg text-gray-700 mb-6">I'm a senior CS student with a passion for software development and data analytics. I am dedicated to transforming complex data to actionable insights, empowering businesses to use data analytics in a meaningful way.</p>
+      <p class="text-gray-700 leading-relaxed">
+        I am currently a senior at Huntington University studying Computer Science, with a minor in Math and a concentration in Data Analytics. Presently, I work as a full-stack software engineer and a data analytics tutor.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-start items-center gap-4 mt-6">
+        <a href="#projects" class="bg-[#BAA38C] text-white px-6 py-2 rounded-full hover:bg-[#9b8d77] transition transform hover:scale-105">See My Work</a>
+        <a href="https://www.canva.com/design/DAFidMRt0LA/cOr8NqVscqznvQokCiPvAw/view?utm_content=DAFidMRt0LA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf5c576a944" target="_blank" class="border border-[#BAA38C] text-[#BAA38C] px-6 py-2 rounded-full hover:bg-[#BAA38C] hover:text-white transition transform hover:scale-105">View Resume</a>
+      </div>
+    </div>
+    <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#BAA38C]">
+      <img src="anna.jpg" class="w-full h-full object-cover" />
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-4xl mx-auto px-4 py-12" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-4">Skills</h3>
+    <ul class="flex flex-wrap gap-4 text-white">
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">SQL</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">R</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Tableau</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">AWS QuickSight</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">PowerBI</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Python</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Cybersecurity</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Dart</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Flutter</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">JavaScript</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">HTML/CSS</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Tailwind</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">Pandas</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">ffmpeg</li>
+      <li class="bg-[#BAA38C] px-4 py-2 rounded-full">CherryPy</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-4xl mx-auto px-4 py-12 bg-gray-50">
+    <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 hover:shadow-2xl" data-aos="zoom-in">
+        <h4 class="text-lg font-semibold mb-2">Productivity App</h4>
+        <p class="text-gray-700 mb-2">An assignment tracker with a study timer created with Dart and Flutter. Inspired by Finch.</p>
+        <a href="https://github.com/awahl2/studyWizard" class="text-[#BAA38C] hover:underline">View Project →</a>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 hover:shadow-2xl" data-aos="zoom-in">
+        <h4 class="text-lg font-semibold mb-2">Religious Video Generator</h4>
+        <p class="text-gray-700 mb-2">Generates videos from Arabic Bible verses using CherryPy, ffmpeg, and Tailwind. Stored with SQLite and displayed on a custom grid UI.</p>
+        <a href="#" class="text-[#BAA38C] hover:underline">Private Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="max-w-4xl mx-auto px-4 py-12" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-center">Certifications</h3>
+    <ul class="list-disc ml-6 text-gray-700">
+      <li>Security Pro Certification - Testout</li>
+      <li>Getting Started with PowerBI - Microsoft</li>
+      <li>Analyze Data with SQL - Code Academy</li>
+      <li>BI Dashboards with Tableau - Code Academy</li>
+      <li>Web Development: HTML and CSS - Girls Who Code</li>
+      <li>Web Development: JavaScript - Girls Who Code</li>
+      <li>Introduction to Data Science - Girls Who Code</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-4xl mx-auto px-4 py-12" data-aos="fade-left">
+    <h3 class="text-2xl font-bold mb-6 text-center">Experience</h3>
+    <ul class="space-y-4">
+      <li>
+        <h4 class="font-semibold">Full Stack Developer Intern - UB Global</h4>
+        <p class="text-sm text-gray-600">May 2025 - Present</p>
+        <ul class="list-disc ml-6 text-gray-700">
+          <li>Created full-stack application with HTML, Tailwind CSS, Python, and SQLite</li>
+          <li>Implemented new database and fixed bugs across the stack</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="font-semibold">Data Analytics Tutor - Huntington University</h4>
+        <p class="text-sm text-gray-600">Jan 2025 - Present</p>
+        <ul class="list-disc ml-6 text-gray-700">
+          <li>Tutored undergraduates in Python, R, SQL, and basic analytics concepts</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="font-semibold">Library Assistant - RichLyn Library</h4>
+        <p class="text-sm text-gray-600">2023 - 2025</p>
+        <ul class="list-disc ml-6 text-gray-700">
+          <li>Provided technical support at service desk for end-users</li>
+          <li> Diagnosed hardware concerns on student and library devices</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto px-4 py-12 text-center" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-4">Let's Connect</h3>
+    <p class="text-gray-700 mb-6">Feel free to reach out — I'm always up for new opportunities and conversations!</p>
+    <div class="flex justify-center gap-4">
+      <a href="mailto:wahlanna407@gmail.com" class="text-[#BAA38C] hover:text-[#9b8d77] transition transform hover:scale-105">Email</a>
+      <a href="https://github.com/awahl2" class="text-[#BAA38C] hover:text-[#9b8d77] transition transform hover:scale-105">GitHub</a>
+      <a href="https://www.linkedin.com/in/wahlanna/" class="text-[#BAA38C] hover:text-[#9b8d77] transition transform hover:scale-105">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Anna Wahl. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+</body>
+</html>
